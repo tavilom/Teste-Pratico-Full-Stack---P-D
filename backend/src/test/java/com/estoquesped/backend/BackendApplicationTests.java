@@ -1,4 +1,4 @@
-package com.extoquesP.D.backend;
+package com.estoquesped.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
