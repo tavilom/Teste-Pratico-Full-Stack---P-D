@@ -3,25 +3,24 @@
 
     <v-row class="mb-4">
       <v-col class="d-flex justify-end">
-        <v-btn
-          color="primary"
-          :to="{ path: '/raw-materials/create' }"
-        >
+
+        <v-btn variant="text" @click="$router.push('/')">
+          ← Back to Home
+        </v-btn>
+
+        <v-btn color="primary" :to="{ path: '/raw-materials/create' }">
           New Raw Material
         </v-btn>
       </v-col>
     </v-row>
 
-    <RawMaterialList
-      :rawMaterials="rawMaterials"
-      @deleted="loadRawMaterials"
-    />
+    <RawMaterialList :rawMaterials="rawMaterials" @deleted="loadRawMaterials" />
 
   </v-container>
 </template>
 
 <script>
-import RawMaterialList from '@/components/RawmaterialList.vue';
+import RawMaterialList from '@/components/RawMaterialList.vue';
 import RawMaterialService from '@/services/RawMaterialService';
 
 export default {
@@ -42,6 +41,10 @@ export default {
       RawMaterialService.getAll()
         .then(res => this.rawMaterials = res.data)
     }
+  },
+
+  handleCreated() {
+    this.$router.push('/')
   }
 }
 </script>

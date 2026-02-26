@@ -1,17 +1,25 @@
-import axios from 'axios'
-
-const API_URL = 'http://localhost:8080/api/raw-materials'
+import api from './api'  
 
 export default {
+
   getAll() {
-    return axios.get(API_URL)
+    return api.get('/raw-materials')
+  },
+
+  getById(id) {
+    return api.get(`/raw-materials/${id}`)
   },
 
   create(rawMaterial) {
-    return axios.post(API_URL, rawMaterial)
+    return api.post('/raw-materials', rawMaterial)
+  },
+
+  update(id, rawMaterial) {
+    return api.put(`/raw-materials/${id}`, rawMaterial)
   },
 
   delete(id) {
-    return axios.delete(`${API_URL}/${id}`)
+    return api.delete(`/raw-materials/${id}`)
   }
+
 }
