@@ -10,6 +10,16 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  test: {
+    globals: true,
+    environment: 'happy-dom', 
+    css: true,                
+    server: {
+      deps: {
+        inline: ['vuetify'] 
+      }
+    }
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

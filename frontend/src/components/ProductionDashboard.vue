@@ -1,7 +1,6 @@
 <template>
   <div>
 
-    <!-- Header -->
     <v-row class="mb-6">
       <v-col>
         <h1 class="text-h4 font-weight-bold">
@@ -56,7 +55,6 @@
 
     </v-row>
 
-    <!-- Production Table -->
     <v-card v-if="result" elevation="3">
 
       <v-card-title>Production Plan</v-card-title>
