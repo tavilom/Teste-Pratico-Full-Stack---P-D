@@ -21,25 +21,16 @@
 
           <td>
             <template v-if="editingId === rm.id">
-              <v-text-field
-                v-model="rm.code"
-                density="compact"
-                hide-details
-              />
+              <v-text-field v-model="rm.code" density="compact" hide-details />
             </template>
             <template v-else>
               {{ rm.code }}
             </template>
           </td>
 
-          <!-- Name -->
           <td>
             <template v-if="editingId === rm.id">
-              <v-text-field
-                v-model="rm.name"
-                density="compact"
-                hide-details
-              />
+              <v-text-field v-model="rm.name" density="compact" hide-details />
             </template>
             <template v-else>
               {{ rm.name }}
@@ -48,12 +39,7 @@
 
           <td>
             <template v-if="editingId === rm.id">
-              <v-text-field
-                v-model.number="rm.stockQuantity"
-                type="number"
-                density="compact"
-                hide-details
-              />
+              <v-text-field v-model.number="rm.stockQuantity" type="number" density="compact" hide-details />
             </template>
             <template v-else>
               {{ rm.stockQuantity }}
@@ -62,44 +48,23 @@
 
           <td>
             <template v-if="editingId === rm.id">
-              <v-text-field
-                v-model="rm.unit"
-                density="compact"
-                hide-details
-              />
+              <v-text-field v-model="rm.unit" density="compact" hide-details />
             </template>
             <template v-else>
               {{ rm.unit }}
             </template>
           </td>
 
-          <!-- Actions -->
           <td>
-            <v-btn
-              size="small"
-              color="primary"
-              v-if="editingId !== rm.id"
-              @click="editingId = rm.id"
-            >
-              Edit
+            <v-btn size="small" color="primary" v-if="editingId !== rm.id" @click="editingId = rm.id">
+              {{ $t('buttons.edit') }}
             </v-btn>
 
-            <v-btn
-              size="small"
-              color="success"
-              v-else
-              @click="updateRawMaterial(rm)"
-            >
-              Save
+            <v-btn size="small" color="success" v-else @click="updateRawMaterial(rm)">{{ $t('buttons.save') }}
             </v-btn>
 
-            <v-btn
-              size="small"
-              color="error"
-              class="ml-2"
-              @click="deleteRawMaterial(rm.id)"
-            >
-              Delete
+            <v-btn size="small" color="error" class="ml-2" @click="deleteRawMaterial(rm.id)">
+              {{ $t('buttons.delete') }}
             </v-btn>
           </td>
 

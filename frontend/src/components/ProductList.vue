@@ -45,21 +45,21 @@
                    color="primary"
                    v-if="editingId !== product.id"
                    @click="editingId = product.id">
-              Edit
+              {{ $t('buttons.edit') }}
             </v-btn>
 
             <v-btn size="small"
                    color="success"
                    v-else
                    @click="updateProduct(product)">
-              Save
+              {{ $t('buttons.save') }}
             </v-btn>
 
             <v-btn size="small"
                    color="error"
                    class="ml-2"
                    @click="deleteProduct(product.id)">
-              Delete
+              {{ $t('buttons.delete') }}
             </v-btn>
           </td>
         </tr>

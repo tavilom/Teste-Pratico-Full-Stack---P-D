@@ -1,0 +1,34 @@
+{
+  "buttons": {
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "calculate": "Calculate Production Plan"
+  },
+  "rawMaterial": {
+    "title": "Raw Materials",
+    "code": "Code",
+    "name": "Name",
+    "stock": "Stock Quantity"
+  },
+  "product": {
+    "title": "Products",
+    "value": "Value"
+  },
+  "production": {
+    "result": "Production Result",
+    "totalValue": "Total Value"
+  },
+  "app": {
+    "title": "Inventory and Production Management"
+  },
+  "home": {
+    "Products": "Products",
+    "Raw Materials": "Raw Materials",
+    "Production": "Production",
+    "Manage and register products": "Manage and register products",
+    "Control stock and materials": "Control stock and materials",
+    "Optimize and maximize profit": "Optimize and maximize profit"
+  }
+}

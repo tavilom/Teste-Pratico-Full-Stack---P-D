@@ -10,8 +10,8 @@
           @click="$router.push('/products')"
         >
           <v-icon size="40" color="primary">mdi-package-variant</v-icon>
-          <h2 class="mt-4">Products</h2>
-          <p>Manage and register products</p>
+          <h2 class="mt-4">{{ $t('home.Products') }}</h2>
+          <p>{{ $t('home.Manage and register products') }}</p>
         </v-card>
       </v-col>
 
@@ -23,8 +23,8 @@
           @click="$router.push('/raw-materials')"
         >
           <v-icon size="40" color="secondary">mdi-cube-outline</v-icon>
-          <h2 class="mt-4">Raw Materials</h2>
-          <p>Control stock and materials</p>
+          <h2 class="mt-4">{{ $t('home.Raw Materials') }}</h2>
+          <p>{{ $t('home.Control stock and materials') }}</p>
         </v-card>
       </v-col>
 
@@ -36,8 +36,8 @@
           @click="$router.push('/production')"
         >
           <v-icon size="40" color="success">mdi-chart-line</v-icon>
-          <h2 class="mt-4">Production</h2>
-          <p>Optimize and maximize profit</p>
+          <h2 class="mt-4">{{ $t('home.Production') }}</h2>
+          <p>{{ $t('home.Optimize and maximize profit') }}</p>
         </v-card>
       </v-col>
 

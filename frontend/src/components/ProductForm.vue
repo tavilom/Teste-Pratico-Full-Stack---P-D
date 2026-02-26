@@ -39,7 +39,7 @@
                color="primary"
                class="mt-4"
                :disabled="rawMaterials.length === 0">
-          Save
+          {{ $t('buttons.save') }}
         </v-btn>
 
       </v-form>

@@ -18,12 +18,11 @@
           @click="optimize"
           :loading="loading"
         >
-          Calculate Production Plan
+          {{ $t('buttons.calculate') }}
         </v-btn>
       </v-col>
     </v-row>
 
-    <!-- KPI Cards -->
     <v-row v-if="result" class="mb-6">
 
       <v-col cols="12" md="4">

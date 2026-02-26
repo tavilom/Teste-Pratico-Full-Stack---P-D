@@ -32,7 +32,7 @@
         color="primary"
         class="mt-4"
       >
-        Save
+        {{ $t('buttons.save') }}
       </v-btn>
 
     </v-form>

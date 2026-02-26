@@ -1,0 +1,34 @@
+{
+  "buttons": {
+    "create": "Criar",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "save": "Salvar",
+    "calculate": "Calcular Plano de Produção"
+  },
+  "rawMaterial": {
+    "title": "Matérias-Primas",
+    "code": "Código",
+    "name": "Nome",
+    "stock": "Quantidade em Estoque"
+  },
+  "product": {
+    "title": "Produtos",
+    "value": "Valor"
+  },
+  "production": {
+    "result": "Resultado da Produção",
+    "totalValue": "Valor Total"
+  },
+  "app": {
+    "title": "Gerenciamento de Estoque e Produção"
+  },
+  "home": {
+    "Products": "Produtos",
+    "Raw Materials": "Matérias-Primas",
+    "Production": "Produção",
+    "Manage and register products": "Gerenciar e registrar produtos",
+    "Control stock and materials": "Controlar estoque e materiais",
+    "Optimize and maximize profit": "Otimize e maximize o lucro"
+  }
+}
