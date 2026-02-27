@@ -3,7 +3,7 @@
     <v-row class="mb-4">
       <v-col>
         <v-btn variant="text" @click="$router.push('/')">
-          ← Back to Home
+          {{$t('backHome')}}
         </v-btn>
       </v-col>
     </v-row>

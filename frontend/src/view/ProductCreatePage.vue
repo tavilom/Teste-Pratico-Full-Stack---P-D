@@ -7,7 +7,7 @@
           variant="text"
           @click="$router.push('/products')"
         >
-          ← Back to Products
+          {{($t('BackProducts'))}}
         </v-btn>
       </v-col>
     </v-row>

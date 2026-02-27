@@ -1,6 +1,6 @@
 <template>
-  <v-card elevation="3">
-    <v-card-title>Create Product</v-card-title>
+  <v-card elevation="3" rounded="xl" class="pa-6">
+    <v-card-title>{{ $t('ProductForm.Title') }}</v-card-title>
 
     <v-card-text>
       <v-alert
@@ -9,18 +9,18 @@
         variant="tonal"
         class="mb-4"
       >
-        You must create Raw Materials first.
+        {{ $t('ProductForm.warning') }}
       </v-alert>
 
       <v-form @submit.prevent="createProduct">
 
-        <v-text-field label="Code" v-model="newProduct.code" required />
-        <v-text-field label="Name" v-model="newProduct.name" required />
-        <v-text-field label="Price" type="number"
+        <v-text-field :label="$t('ProductForm.Code')" v-model="newProduct.code" required />
+        <v-text-field :label="$t('ProductForm.Name')" v-model="newProduct.name" required />
+        <v-text-field :label="$t('ProductForm.Price')" type="number"
                       v-model.number="newProduct.price" required />
 
         <v-select
-          label="Raw Material"
+          :label="$t('ProductForm.rawMaterial')"
           :items="rawMaterials"
           item-title="name"
           item-value="id"
@@ -29,7 +29,7 @@
         />
 
         <v-text-field
-          label="Required Quantity"
+          :label="$t('ProductForm.requiredQuantity')"
           type="number"
           v-model.number="composition.requiredQuantity"
           required

@@ -1,23 +1,20 @@
 <template>
-  <v-card elevation="2" rounded="xl" class="pa-4">
+  <v-card elevation="3" rounded="xl" class="pa-4">
+    <v-card-title>{{ $t('RawMaterialList.Title') }}</v-card-title>
 
     <v-table>
       <thead>
         <tr>
-          <th>ID</th>
-          <th>Code</th>
-          <th>Name</th>
-          <th>Stock Quantity</th>
-          <th>Unit</th>
-          <th>Actions</th>
+          <th>{{ $t('RawMaterialList.Code') }}</th>
+          <th>{{ $t('RawMaterialList.Name') }}</th>
+          <th>{{ $t('RawMaterialList.Stock') }}</th>
+          <th>{{ $t('RawMaterialList.Unit') }}</th>
+          <th>{{ $t('RawMaterialList.Actions') }}</th>
         </tr>
       </thead>
 
       <tbody>
         <tr v-for="rm in rawMaterials" :key="rm.id">
-
-
-          <td>{{ rm.id }}</td>
 
           <td>
             <template v-if="editingId === rm.id">

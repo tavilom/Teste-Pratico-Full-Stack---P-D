@@ -30,5 +30,55 @@
     "Manage and register products": "Manage and register products",
     "Control stock and materials": "Control stock and materials",
     "Optimize and maximize profit": "Optimize and maximize profit"
+  },
+  "backHome": "← Back to Home",
+  "NewProduct": "New Product",
+  "NewRawMaterial": "New Raw Material",
+  "BackProducts": "← Back to Products",
+  "BackRawMaterials": "← Back to Raw Materials",
+  "ProductiList": {
+    "Title": "Product List",
+    "Id": "ID",
+    "Code": "Code",
+    "Name": "Name",
+    "Price": "Price",
+    "Actions": "Actions",
+    "NoProducts": "No products found"
+  },
+  "ProductForm": {
+    "Title": "Product Creation",
+    "Code": "Code",
+    "Name": "Name",
+    "Price": "Price",
+    "rawMaterial": "Raw Material",
+    "requiredQuantity": "Required Quantity",
+    "warning": "You must create Raw Materials first."
+  },
+  "RawMaterialList": {
+    "Title": "Raw Material List",
+    "Code": "Code",
+    "Name": "Name",
+    "Stock": "Stock Quantity",
+    "Unit": "Unit",
+    "Actions": "Actions"
+  },
+  "RawMaterialForm": {
+    "Title": "Raw Material Creation",
+    "Code": "Code",
+    "Name": "Name",
+    "Stock": "Stock Quantity",
+    "Unit": "Unit"
+  },
+  "ProductionDashboard": {
+    "Title": "Production Optimization",
+    "Analyze": "Analyze current stock and calculate the most profitable production plan.",
+    "TotalProducts": "Total Products",
+    "TotalUnitsProduced": "Total Units ",
+    "TotalProfit": "Total Profit",
+    "ProductionPlan": "Production Plan",
+    "Product": "Product",
+    "Quantity": "Quantity",
+    "TotalValue": "Total Value",
+    "Noproductionpossiblewithcurrentstock.": "No production possible with current stock."
   }
 }

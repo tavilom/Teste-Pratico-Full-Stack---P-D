@@ -30,5 +30,55 @@
     "Manage and register products": "Gerenciar e registrar produtos",
     "Control stock and materials": "Controlar estoque e materiais",
     "Optimize and maximize profit": "Otimize e maximize o lucro"
+  },
+  "backHome": "← Voltar para pagina inicial",
+  "NewProduct": "Novo Produto",
+  "NewRawMaterial": "Nova Matéria-Prima",
+  "BackProducts": "← Voltar para os Produtos",
+  "BackRawMaterials": "← Voltar para as Matérias-Primas",
+  "ProductiList": {
+    "Title": "Lista de Produtos",
+    "Id": "Identificação",
+    "Code": "Código",
+    "Name": "Nome",
+    "Price": "Preço",
+    "Actions": "Ações",
+    "NoProducts": "Nenhum produto encontrado"
+  },
+  "ProductForm": {
+    "Title": "Criação de Produto",
+    "Code": "Código",
+    "Name": "Nome",
+    "Price": "Preço",
+    "rawMaterial": "Matéria-Prima",
+    "requiredQuantity": "Quantidade Requerida",
+    "warning": "Você deve criar Matérias-Primas primeiro."
+  },
+  "RawMaterialList": {
+    "Title": "Lista de Matérias-Primas",
+    "Code": "Código",
+    "Name": "Nome",
+    "Stock": "Quantidade em Estoque ",
+    "Unit": "Unidade",
+    "Actions": "Ações"
+  },
+  "RawMaterialForm": {
+    "Title": "Criação de Matéria-Prima",
+    "Code": "Código",
+    "Name": "Nome",
+    "Stock": "Quantidade em Estoque",
+    "Unit": "Unidade"
+  },
+    "ProductionDashboard": {
+    "Title": "Otimização de Produção",
+    "Analyze": "Analisar o estoque atual e calcular o plano de produção mais lucrativo.",
+    "TotalProducts": "Total de Produtos",
+    "TotalUnitsProduced": "Total de Unidades ",
+    "TotalProfit": "Lucro Total",
+    "ProductionPlan": "Plano de Produção",
+    "Product": "Produto",
+    "Quantity": "Quantidade",
+    "TotalValue": "Valor Total",
+    "Noproductionpossiblewithcurrentstock.": "Nenhuma produção possível com o estoque atual."
   }
 }

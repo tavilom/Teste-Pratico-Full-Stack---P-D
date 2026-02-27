@@ -5,11 +5,11 @@
       <v-col class="d-flex justify-end">
 
         <v-btn variant="text" @click="$router.push('/')">
-          ← Back to Home
+          {{ $t('backHome') }}
         </v-btn>
 
         <v-btn color="primary" :to="{ path: '/raw-materials/create' }">
-          New Raw Material
+          {{ $t('NewRawMaterial') }}
         </v-btn>
       </v-col>
     </v-row>
