@@ -7,7 +7,7 @@
           variant="text"
           @click="$router.push('/raw-materials')"
         >
-          ← Back to Raw Materials
+          {{$t('BackRawMaterials')}}
         </v-btn>
       </v-col>
     </v-row>

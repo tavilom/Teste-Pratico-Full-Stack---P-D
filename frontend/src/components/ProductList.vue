@@ -1,22 +1,19 @@
 <template>
-  <v-card elevation="3">
-    <v-card-title>Product List</v-card-title>
+  <v-card elevation="3" rounded="xl" class="pa-4">
+    <v-card-title>{{ $t('ProductiList.Title') }}</v-card-title>
 
     <v-table>
       <thead>
         <tr>
-          <th>ID</th>
-          <th>Code</th>
-          <th>Name</th>
-          <th>Price</th>
-          <th>Actions</th>
+          <th>{{ $t('ProductiList.Code') }}</th>
+          <th>{{ $t('ProductiList.Name') }}</th>
+          <th>{{ $t('ProductiList.Price') }}</th>
+          <th>{{ $t('ProductiList.Actions') }}</th>
         </tr>
       </thead>
 
       <tbody>
         <tr v-for="product in products" :key="product.id">
-          <td>{{ product.id }}</td>
-
           <td v-if="editingId !== product.id">
             {{ product.code }}
           </td>
@@ -35,30 +32,19 @@
             {{ product.price }}
           </td>
           <td v-else>
-            <v-text-field type="number"
-                          v-model.number="product.price"
-                          density="compact" />
+            <v-text-field type="number" v-model.number="product.price" density="compact" />
           </td>
 
           <td>
-            <v-btn size="small"
-                   color="primary"
-                   v-if="editingId !== product.id"
-                   @click="editingId = product.id">
+            <v-btn size="small" color="primary" v-if="editingId !== product.id" @click="editingId = product.id">
               {{ $t('buttons.edit') }}
             </v-btn>
 
-            <v-btn size="small"
-                   color="success"
-                   v-else
-                   @click="updateProduct(product)">
+            <v-btn size="small" color="success" v-else @click="updateProduct(product)">
               {{ $t('buttons.save') }}
             </v-btn>
 
-            <v-btn size="small"
-                   color="error"
-                   class="ml-2"
-                   @click="deleteProduct(product.id)">
+            <v-btn size="small" color="error" class="ml-2" @click="deleteProduct(product.id)">
               {{ $t('buttons.delete') }}
             </v-btn>
           </td>
@@ -67,7 +53,7 @@
     </v-table>
 
     <v-card-text v-if="products.length === 0">
-      No products found.
+      {{ $t('ProductiList.NoProducts') }}
     </v-card-text>
 
   </v-card>

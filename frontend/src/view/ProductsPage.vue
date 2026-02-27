@@ -5,11 +5,11 @@
       <v-col class="d-flex justify-end">
 
         <v-btn variant="text" @click="$router.push('/')">
-          ← Back to Home
+          {{$t('backHome')}}
         </v-btn>
 
         <v-btn color="primary" :to="{ path: '/products/create' }">
-          New Product
+          {{$t('NewProduct')}}
         </v-btn>
 
       </v-col>

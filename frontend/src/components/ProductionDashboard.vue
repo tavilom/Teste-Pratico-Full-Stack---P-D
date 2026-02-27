@@ -4,20 +4,14 @@
     <v-row class="mb-6">
       <v-col>
         <h1 class="text-h4 font-weight-bold">
-          Production Optimization
+          {{ $t('ProductionDashboard.Title') }}
         </h1>
         <p class="text-subtitle-1">
-          Analyze current stock and calculate the most profitable production plan.
-        </p>
+          {{ $t('ProductionDashboard.Analyze') }}</p>
       </v-col>
 
       <v-col class="d-flex justify-end align-center">
-        <v-btn
-          color="primary"
-          size="large"
-          @click="optimize"
-          :loading="loading"
-        >
+        <v-btn color="primary" size="large" @click="optimize" :loading="loading">
           {{ $t('buttons.calculate') }}
         </v-btn>
       </v-col>
@@ -27,7 +21,7 @@
 
       <v-col cols="12" md="4">
         <v-card elevation="3">
-          <v-card-title>Total Products</v-card-title>
+          <v-card-title>{{$t('ProductionDashboard.TotalProducts')}}</v-card-title>
           <v-card-text class="text-h5">
             {{ result.producedProducts.length }}
           </v-card-text>
@@ -36,7 +30,7 @@
 
       <v-col cols="12" md="4">
         <v-card elevation="3">
-          <v-card-title>Total Units Produced</v-card-title>
+          <v-card-title>{{$t('ProductionDashboard.TotalUnitsProduced')}}</v-card-title>
           <v-card-text class="text-h5">
             {{ totalUnits }}
           </v-card-text>
@@ -45,7 +39,7 @@
 
       <v-col cols="12" md="4">
         <v-card elevation="3">
-          <v-card-title>Total Profit</v-card-title>
+          <v-card-title>{{$t('ProductionDashboard.TotalProfit')}}</v-card-title>
           <v-card-text class="text-h5 text-success">
             {{ formatCurrency(result.totalValue) }}
           </v-card-text>
@@ -56,20 +50,19 @@
 
     <v-card v-if="result" elevation="3">
 
-      <v-card-title>Production Plan</v-card-title>
+      <v-card-title>{{$t('ProductionDashboard.ProductionPlan')}}</v-card-title>
 
       <v-table v-if="result.producedProducts.length > 0">
         <thead>
           <tr>
-            <th>Product</th>
-            <th>Quantity</th>
-            <th>Total Value</th>
+            <th>{{ $t('ProductionDashboard.Product') }}</th>
+            <th>{{ $t('ProductionDashboard.Quantity') }}</th>
+            <th>{{ $t('ProductionDashboard.TotalValue') }}</th>
           </tr>
         </thead>
 
         <tbody>
-          <tr v-for="item in result.producedProducts"
-              :key="item.productId">
+          <tr v-for="item in result.producedProducts" :key="item.productId">
 
             <td>{{ item.productName }}</td>
             <td>{{ item.producedQuantity }}</td>
@@ -81,7 +74,7 @@
       </v-table>
 
       <v-card-text v-else>
-        No production possible with current stock.
+        {{ $t('ProductionDashboard.Noproductionpossiblewithcurrentstock') }}
       </v-card-text>
 
     </v-card>
